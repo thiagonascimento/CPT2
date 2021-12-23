@@ -1,0 +1,154 @@
+/* geral */
+
+
+/* 
+  Configuração para todo projeto.
+  bordas,fonte e bordas
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #070707;
+    border: none;
+}
+
+
+/*
+   Cada label e imput representar uma linha, nao ficando um ao lado
+   do outro e largura 100%
+*/
+
+input,
+label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+
+/*
+Corpo do site 5vh distancia do top
+e coloração.
+*/
+
+body {
+    padding-top: 5vh;
+    background-color: lightblue;
+}
+
+
+/* configuração do form */
+
+#main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    /* Adapta aoa elemento root*/
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Ajustes nasposiçoes do elementos */
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+
+/*  */
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+
+/* espaçamento entre os inputs*/
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+
+/*Ajustes fontes label */
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+
+/*
+  Alterar as configurações do sbmit
+*/
+
+input[type="submit"] {
+    background-color: #000000;
+    color: rgb(248, 248, 250);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+textarea {
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(82, 78, 78);
+    box-shadow: 1px 1px 1px rgb(22, 22, 22);
+    margin-bottom: 40px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+select {
+    padding: 9px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+
+/*
+  Configurações mensagens de erro
+*/
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+
+.template {
+    display: none;
+}
